@@ -24,22 +24,22 @@ if(isset($_POST['Sonic'])){
 
 
 		if($votoSonic > $votoMario){
-			echo "<p>Sonic: " . $votoSonic . " votos.</p>";
-			echo "<p>Mario: " . $votoMario . " votos.</p>";
-			echo "<p>Sonic venceu a votação.</p>";
+			echo "<p class='resultado'>Sonic: " . $votoSonic . " votos.</p>";
+			echo "<p class='resultado'>Mario: " . $votoMario . " votos.</p>";
+			echo "<p class='resultado'>Sonic venceu a votação.</p>";
 		}else if($votoMario > $votoSonic){
-			echo "<p>Mario: " . $votoMario . " votos.</p>";
-			echo "<p>Sonic: " . $votoSonic . " votos.</p>";
-			echo "<p>Mario venceu a votação.</p>";
+			echo "<p class='resultado'>Mario: " . $votoMario . " votos.</p>";
+			echo "<p class='resultado'>Sonic: " . $votoSonic . " votos.</p>";
+			echo "<p class='resultado'>Mario venceu a votação.</p>";
 		}else if($votoMario == $votoSonic){
 			if($votoMario == 1){
-				echo "<p>Sonic: " . $votoSonic . " voto.</p>";
-				echo "<p>Mario: " . $votoMario . " voto.</p>";
-				echo "<p>Empate.</p>";
+				echo "<p class='resultado'>Sonic: " . $votoSonic . " voto.</p>";
+				echo "<p class='resultado'>Mario: " . $votoMario . " voto.</p>";
+				echo "<p class='resultado'>Empate.</p>";
  			}else if($votoMario > 1){
-				echo "<p>Sonic está com: " . $votoSonic . " votos.</p>";
-				echo "<p>Mario está com: " . $votoMario . " votos.</p>";
-				echo "<p>Empate.</p>";
+				echo "<p class='resultado'>Sonic está com: " . $votoSonic . " votos.</p>";
+				echo "<p class='resultado'>Mario está com: " . $votoMario . " votos.</p>";
+				echo "<p class='resultado'>Empate.</p>";
 			}
 		}
 	}
